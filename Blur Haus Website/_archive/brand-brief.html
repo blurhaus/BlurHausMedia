@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Brief — Blur Haus Media</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Neutrals */
+    --citrine: #F9EDD2;
+    --cream: #EEE9DA;
+    --beige: #FEEFDC;
+    --taupe: #A89381;
+    /* Browns */
+    --sand: #C9946A;
+    --potters: #8C623B;
+    --espresso: #5E3417;
+    --dark-rum: #3D1E0C;
+    --leather: #231F20;
+    /* Wines */
+    --wine-berry: #5D222C;
+    --temptress: #440200;
+    --cranberry: #6F1518;
+    /* Earthy pops */
+    --burnt-orange: #A45337;
+    --burnt-sienna: #8A3324;
+    --terracotta: #79301F;
+    /* Complements */
+    --deep-sage: #52451B;
+    --olive: #616654;
+    --slate: #3C424E;
+
+    --line: rgba(35, 31, 32, 0.12);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--citrine);
+    color: var(--leather);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  /* SHARED TYPE TREATMENTS */
+
+  /* The structural/impact face — for categories, brand mark, page titles */
+  .impact {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--leather);
+  }
+
+  /* The poetic/named face — for tier names, taglines, soul copy */
+  .editorial {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.05;
+    color: var(--leather);
+  }
+
+  /* The accent face — for UI labels, eyebrows, prices */
+  .accent {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--wine-berry);
+  }
+
+  /* HEADER */
+  header {
+    padding: 80px 0 40px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--wine-berry);
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  header h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(72px, 14vw, 168px);
+    font-weight: 400;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: var(--leather);
+    margin-bottom: 28px;
+    text-transform: uppercase;
+  }
+
+  header .lede {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    color: var(--espresso);
+    max-width: 600px;
+    line-height: 1.6;
+  }
+
+  /* SECTION */
+  section {
+    padding: 80px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  .section-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--wine-berry);
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  /* Top-level section headers — Archivo Black uppercase */
+  h2.h2-impact {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(40px, 7vw, 72px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    color: var(--leather);
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+
+  /* Feature/named headers — Instrument Serif italic */
+  h2.h2-editorial {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.05;
+    color: var(--leather);
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    color: var(--leather);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  h3.h3-editorial {
+    font-family: 'Instrument Serif', serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1.1;
+  }
+
+  p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: var(--espresso);
+    line-height: 1.7;
+    margin-bottom: 16px;
+    max-width: 720px;
+  }
+
+  p.large {
+    font-size: 19px;
+    color: var(--leather);
+    max-width: 760px;
+  }
+
+  /* MEANING SECTION */
+  .meaning-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 720px) {
+    .meaning-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  .meaning-block .word {
+    font-family: 'Instrument Serif', serif;
+    font-size: 96px;
+    font-style: italic;
+    color: var(--wine-berry);
+    line-height: 0.95;
+    margin-bottom: 24px;
+  }
+
+  /* COLOR PALETTE */
+  .palette-group { margin-bottom: 56px; }
+
+  .palette-group-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--potters);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .palette-group-note {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--espresso);
+    margin-bottom: 24px;
+    max-width: 640px;
+  }
+
+  .palette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+  }
+
+  .swatch {
+    border: 1px solid var(--line);
+    overflow: hidden;
+  }
+
+  .swatch-color { height: 120px; width: 100%; }
+
+  .swatch-info {
+    padding: 12px 14px;
+    background: var(--citrine);
+    border-top: 1px solid var(--line);
+  }
+
+  .swatch-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--leather);
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+  }
+
+  .swatch-hex {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+    color: var(--potters);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* TYPE SAMPLES */
+  .type-sample {
+    margin-bottom: 56px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--line);
+  }
+  .type-sample:last-child { border-bottom: none; }
+
+  .type-meta {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--potters);
+    margin-bottom: 24px;
+  }
+
+  .type-meta strong {
+    color: var(--leather);
+    font-weight: 500;
+    margin-right: 8px;
+  }
+
+  .type-meta .role {
+    color: var(--burnt-sienna);
+    margin-left: 16px;
+  }
+
+  .type-display-impact {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 88px;
+    line-height: 0.9;
+    color: var(--leather);
+    margin-bottom: 16px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+  }
+
+  .type-display-editorial {
+    font-family: 'Instrument Serif', serif;
+    font-size: 88px;
+    font-style: italic;
+    line-height: 0.95;
+    color: var(--leather);
+    margin-bottom: 16px;
+  }
+
+  .type-body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--espresso);
+    max-width: 600px;
+    margin-bottom: 8px;
+  }
+
+  .type-eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--wine-berry);
+    margin-bottom: 8px;
+  }
+
+  /* HIERARCHY DEMO BLOCK */
+  .hierarchy-demo {
+    background: var(--cream);
+    padding: 56px 48px;
+    margin-top: 24px;
+    border: 1px solid var(--line);
+  }
+
+  .hierarchy-demo .demo-row {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .hierarchy-demo .demo-row:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .hierarchy-demo .demo-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--burnt-sienna);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .hierarchy-demo .demo-text-impact {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 36px;
+    color: var(--leather);
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+  }
+
+  .hierarchy-demo .demo-text-editorial {
+    font-family: 'Instrument Serif', serif;
+    font-size: 44px;
+    font-style: italic;
+    color: var(--leather);
+    line-height: 1.05;
+  }
+
+  .hierarchy-demo .demo-text-body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: var(--espresso);
+    line-height: 1.7;
+  }
+
+  .hierarchy-demo .demo-text-accent {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--wine-berry);
+    font-weight: 500;
+  }
+
+  /* MOOD SECTION */
+  .mood-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 720px) {
+    .mood-grid { grid-template-columns: 1fr; }
+  }
+
+  .mood-card {
+    padding: 32px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+  }
+
+  .mood-card.dark {
+    background: var(--leather);
+    color: var(--citrine);
+  }
+
+  .mood-card.dark h3,
+  .mood-card.dark p {
+    color: var(--citrine);
+  }
+
+  .mood-card.dark .section-label {
+    color: var(--burnt-orange);
+  }
+
+  .mood-card.wine {
+    background: var(--wine-berry);
+    color: var(--citrine);
+  }
+
+  .mood-card.wine h3,
+  .mood-card.wine p {
+    color: var(--citrine);
+  }
+
+  .mood-card.wine .section-label {
+    color: var(--cream);
+  }
+
+  /* PREVIEW */
+  .preview-block {
+    background: var(--cream);
+    padding: 80px 48px;
+    margin-top: 32px;
+    border: 1px solid var(--line);
+    text-align: center;
+  }
+
+  .preview-block .brand-mark {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 32px;
+    color: var(--leather);
+    margin-bottom: 56px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  .preview-block .preview-eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--wine-berry);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .preview-block .section-impact {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 56px;
+    color: var(--leather);
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+
+  .preview-block .tier-name {
+    font-family: 'Instrument Serif', serif;
+    font-size: 64px;
+    font-style: italic;
+    color: var(--leather);
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+
+  .preview-block .price-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--burnt-sienna);
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  .preview-block .brand-body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: var(--espresso);
+    max-width: 500px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+  }
+
+  .preview-block .brand-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: var(--burnt-sienna);
+    color: var(--citrine);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .preview-block .brand-btn:hover {
+    background: var(--leather);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 48px 0;
+    background: var(--leather);
+    color: var(--citrine);
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <span class="eyebrow">Brand Brief · V4 · Final Combined System</span>
+    <h1>Blur Haus<br>Media</h1>
+    <p class="lede">Cool-girl editorial. Gen Z modern. A creative house where motion becomes content. Smoky, dusty, earthy — the aesthetic of someone with eight plants, a candle lit before every shoot, and a real eye for what looks good.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <span class="section-label">What the name means · Locked</span>
+    <h2 class="h2-editorial">Two halves of one identity.</h2>
+    <p class="large">The brand is built from two ideas. Every visual, copy, and creative decision should reinforce one of them.</p>
+
+    <div class="meaning-grid">
+      <div class="meaning-block">
+        <div class="word">Blur</div>
+        <p><strong>Motion captured.</strong> The in-between moment. The cinematic energy of beauty in real motion — not posed, not staged. The atmospheric, soft-focus thing that feels real. The fleeting beauty made permanent.</p>
+      </div>
+      <div class="meaning-block">
+        <div class="word">Haus</div>
+        <p><strong>A creative house.</strong> A design studio in the Bauhaus sense — intentional, modern, craft-driven. Not a freelancer for hire — a creative entity with a point of view. A space, a team, an identity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <span class="section-label">Color Palette · Locked</span>
+    <h2 class="h2-impact">Smoky. Dusty. Earthy.</h2>
+    <p class="large">A broad palette stays disciplined because every color lives in the same desaturated earth-tone family. Browns lead. Wines anchor. Burnt oranges punch. Olives and slates appear sparingly. Nothing bright. Nothing gold.</p>
+
+    <div class="palette-group">
+      <span class="palette-group-label">Neutrals · The Floor</span>
+      <p class="palette-group-note">Backgrounds, surfaces, body text foundation. The whole site lives here.</p>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #F9EDD2;"></div><div class="swatch-info"><div class="swatch-name">Citrine White</div><div class="swatch-hex">#F9EDD2</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #EEE9DA;"></div><div class="swatch-info"><div class="swatch-name">Cream</div><div class="swatch-hex">#EEE9DA</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #FEEFDC;"></div><div class="swatch-info"><div class="swatch-name">Beige</div><div class="swatch-hex">#FEEFDC</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #A89381;"></div><div class="swatch-info"><div class="swatch-name">Taupe</div><div class="swatch-hex">#A89381</div></div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <span class="palette-group-label">Browns · The Heart</span>
+      <p class="palette-group-note">Depth, secondary text, photo backgrounds, accent surfaces.</p>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #C9946A;"></div><div class="swatch-info"><div class="swatch-name">Sand</div><div class="swatch-hex">#C9946A</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #8C623B;"></div><div class="swatch-info"><div class="swatch-name">Potters Clay</div><div class="swatch-hex">#8C623B</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #5E3417;"></div><div class="swatch-info"><div class="swatch-name">Espresso</div><div class="swatch-hex">#5E3417</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #3D1E0C;"></div><div class="swatch-info"><div class="swatch-name">Dark Rum</div><div class="swatch-hex">#3D1E0C</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #231F20;"></div><div class="swatch-info"><div class="swatch-name">Leather</div><div class="swatch-hex">#231F20</div></div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <span class="palette-group-label">Wines · The Depth</span>
+      <p class="palette-group-note">Headers, eyebrows, surfaces where the brand needs gravity.</p>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #5D222C;"></div><div class="swatch-info"><div class="swatch-name">Wine Berry</div><div class="swatch-hex">#5D222C</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #440200;"></div><div class="swatch-info"><div class="swatch-name">Temptress</div><div class="swatch-hex">#440200</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #6F1518;"></div><div class="swatch-info"><div class="swatch-name">Cranberry</div><div class="swatch-hex">#6F1518</div></div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <span class="palette-group-label">Earthy Pops · The Punch</span>
+      <p class="palette-group-note">Buttons, design elements, icons, accent moments.</p>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #A45337;"></div><div class="swatch-info"><div class="swatch-name">Burnt Orange</div><div class="swatch-hex">#A45337</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #8A3324;"></div><div class="swatch-info"><div class="swatch-name">Burnt Sienna</div><div class="swatch-hex">#8A3324</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #79301F;"></div><div class="swatch-info"><div class="swatch-name">Terracotta</div><div class="swatch-hex">#79301F</div></div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <span class="palette-group-label">Complements · Use Sparingly</span>
+      <p class="palette-group-note">For variety, never as primary.</p>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #52451B;"></div><div class="swatch-info"><div class="swatch-name">Deep Sage</div><div class="swatch-hex">#52451B</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #616654;"></div><div class="swatch-info"><div class="swatch-name">Olive Grove</div><div class="swatch-hex">#616654</div></div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #3C424E;"></div><div class="swatch-info"><div class="swatch-name">Slate</div><div class="swatch-hex">#3C424E</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <span class="section-label">Typography · Combined System</span>
+    <h2 class="h2-impact">Four typefaces.<br>Four jobs.</h2>
+    <p class="large">Each face has one role and never competes with another at the same level. Heavy sans labels the category. Italic serif names the specific thing. Clean sans handles body. Tracked sans handles UI.</p>
+
+    <div class="type-sample">
+      <div class="type-meta"><strong>Display · Impact</strong> Archivo Black <span class="role">// Categories, Brand Mark, Page Titles</span></div>
+      <div class="type-display-impact">cool girl<br>aesthetic</div>
+      <p class="type-body">Archivo Black is the structural face. Heavy, dense, ALL CAPS. For the moments that label or anchor — section headers like MEMBERSHIPS or PRODUCTIONS, the brand mark itself, page titles. The scaffolding that holds everything up.</p>
+    </div>
+
+    <div class="type-sample">
+      <div class="type-meta"><strong>Display · Editorial</strong> Instrument Serif (italic) <span class="role">// Tier Names, Taglines, Soul Copy</span></div>
+      <div class="type-display-editorial">the studio<br>the glimpse</div>
+      <p class="type-body">Instrument Serif italic is the poetic face. For the named things — tier names like The Studio, The Glimpse, The Vignette. For taglines, pull quotes, the moments where the brand needs to feel something. Lives inside the structural categories that Archivo Black creates.</p>
+    </div>
+
+    <div class="type-sample">
+      <div class="type-meta"><strong>Body</strong> DM Sans · 400 / 500 <span class="role">// Everything Readable</span></div>
+      <p class="type-body">DM Sans handles every paragraph, every description, every FAQ answer. Clean, modern, grown-up. Stays out of the way so the display faces can do the heavy lifting. Use weight 500 sparingly for emphasis inside running copy.</p>
+    </div>
+
+    <div class="type-sample">
+      <div class="type-meta"><strong>Accent</strong> Space Grotesk · 500 <span class="role">// UI Labels, Eyebrows, Prices</span></div>
+      <div class="type-eyebrow">Eyebrows · Section Labels · Buttons · Prices</div>
+      <p class="type-body">Space Grotesk handles the small. Tiny labels above headlines, button text, navigation, prices, captions. Tracked-out wide letterspacing. Always uppercase. Never for body. The detail face that makes everything feel considered.</p>
+    </div>
+
+    <h3 class="h3-editorial" style="margin-top: 48px; margin-bottom: 16px;">How they work together.</h3>
+    <p>Each type sample below shows the system in real use — exactly what it'll look like on the website.</p>
+
+    <div class="hierarchy-demo">
+
+      <div class="demo-row">
+        <div class="demo-label">01 · Top Section Label</div>
+        <div class="demo-text-accent">Memberships</div>
+      </div>
+
+      <div class="demo-row">
+        <div class="demo-label">02 · Section Title (Impact)</div>
+        <div class="demo-text-impact">Ongoing Production.</div>
+      </div>
+
+      <div class="demo-row">
+        <div class="demo-label">03 · Tier Name (Editorial)</div>
+        <div class="demo-text-editorial">The Studio</div>
+      </div>
+
+      <div class="demo-row">
+        <div class="demo-label">04 · Price (Accent)</div>
+        <div class="demo-text-accent">$497 / Per Month</div>
+      </div>
+
+      <div class="demo-row">
+        <div class="demo-label">05 · Body</div>
+        <div class="demo-text-body">A month of editorial content. One shoot, finished, delivered to your phone. Filmed and edited to your brand, ready to post. Strategy and ongoing communication baked in.</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <span class="section-label">Brand Voice</span>
+    <h2 class="h2-impact">Cool girl. Knows her shit.</h2>
+
+    <div class="mood-grid">
+      <div class="mood-card">
+        <h3 class="h3-editorial">What it sounds like.</h3>
+        <p>Direct. Confident. A little dry. Not chasing approval, not selling. The voice of someone who's done the work and isn't precious about it. Warm but not soft. Real but not unhinged.</p>
+      </div>
+
+      <div class="mood-card wine">
+        <span class="section-label">Yes</span>
+        <h3 class="h3-editorial">Lean into.</h3>
+        <p>Plants. Glow. Calm beauty products styled like still life. Warm sunlight. Espresso. Linen. Vintage mirrors. Big chunky sans on cream. Italic serif tier names. Smoky earth tones. Burnt orange button on a cream page.</p>
+      </div>
+
+      <div class="mood-card dark">
+        <span class="section-label">No</span>
+        <h3 class="h3-editorial">Avoid entirely.</h3>
+        <p>Gold (cut). Pink. Cursive script fonts. Sparkles, hearts, glitter. Bright color anywhere. "Babe" energy. Cutesy graphics. Anything that reads "Etsy bridal" or "MLM girlboss." Anything that tries too hard.</p>
+      </div>
+
+      <div class="mood-card">
+        <h3 class="h3-editorial">Reference moodboard.</h3>
+        <p>Westman Atelier × Aimé Leon Dore × an art director's apartment in Tribeca. The studio of a 26-year-old who reads Cereal Magazine, has eight plants, lights candles before she shoots, and knows the difference between cream and bone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <span class="section-label">Preview · The System in One Frame</span>
+    <h2 class="h2-editorial">How it lands.</h2>
+    <p>One mockup with everything working together — palette, typography, voice. This is roughly how a Memberships card will look on the live site.</p>
+
+    <div class="preview-block">
+      <div class="brand-mark">Blur Haus Media</div>
+      <div class="preview-eyebrow">Memberships · Founding Rates Open</div>
+      <div class="section-impact">Ongoing<br>Production.</div>
+      <div class="tier-name">The Studio</div>
+      <div class="price-label">$497 / Per Month</div>
+      <p class="brand-body">A month of editorial content. One shoot, finished, delivered to your phone. Filmed and edited to your brand. Strategy baked in.</p>
+      <a href="#" class="brand-btn">Reserve Your Call</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Blur Haus Media · Brand Brief V4 · Final Combined System · 2026-05-02
+  </div>
+</footer>
+
+</body>
+</html>

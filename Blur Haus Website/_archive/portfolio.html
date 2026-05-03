@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Blur Haus Media</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Portfolio-specific */
+  .portfolio-hero {
+    padding: 120px 0 80px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  .portfolio-hero .eyebrow { margin-bottom: 24px; }
+  .portfolio-hero h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(64px, 10vw, 132px);
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--leather);
+    margin-bottom: 32px;
+  }
+  .portfolio-hero h1 .italic {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    text-transform: none;
+    font-size: 0.95em;
+    color: var(--wine-berry);
+    letter-spacing: -0.01em;
+  }
+  .portfolio-hero .subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: var(--espresso);
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.65;
+  }
+
+  /* Coming soon block */
+  .coming-soon-block {
+    padding: 120px 0;
+    text-align: center;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+  }
+  .coming-soon-block .container { max-width: 720px; }
+  .coming-soon-block .label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--burnt-sienna);
+    margin-bottom: 24px;
+    display: block;
+  }
+  .coming-soon-block h2 {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--leather);
+    margin-bottom: 32px;
+  }
+  .coming-soon-block p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    color: var(--espresso);
+    line-height: 1.75;
+    max-width: 580px;
+    margin: 0 auto 32px;
+  }
+
+  /* Placeholder grid */
+  .portfolio-section {
+    padding: 80px 0;
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .portfolio-tile {
+    aspect-ratio: 4/5;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    color: var(--leather);
+    text-decoration: none;
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio-tile.dark { background: var(--leather); color: var(--citrine); }
+  .portfolio-tile.wine { background: var(--wine-berry); color: var(--citrine); }
+  .portfolio-tile.terracotta { background: var(--terracotta); color: var(--citrine); }
+  .portfolio-tile.espresso { background: var(--espresso); color: var(--citrine); }
+  .portfolio-tile.sand { background: var(--sand); color: var(--leather); }
+  .portfolio-tile:hover { transform: translateY(-4px); }
+  .portfolio-tile .placeholder-marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 56px;
+    color: rgba(255, 255, 255, 0.15);
+    line-height: 1;
+  }
+  .portfolio-tile.sand .placeholder-marker { color: rgba(35, 31, 32, 0.15); }
+  .portfolio-tile .tile-tag {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+    opacity: 0.85;
+    position: relative;
+  }
+  .portfolio-tile h3 {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+    position: relative;
+  }
+
+  .placeholder-note {
+    text-align: center;
+    margin-top: 56px;
+    padding-top: 40px;
+    border-top: 1px solid var(--line);
+  }
+  .placeholder-note p {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--espresso);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">Blur Haus Media</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu-draft.html">Menu</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="portfolio-hero">
+  <div class="container">
+    <span class="eyebrow">Portfolio</span>
+    <h1>The work,<br><span class="italic">in motion.</span></h1>
+    <p class="subtitle">Editorial video for stylists, salons, and beauty pros across hair, skin, lash, brow, and more.</p>
+  </div>
+</section>
+
+<section class="coming-soon-block">
+  <div class="container">
+    <span class="label">Currently Building</span>
+    <h2>The first reels are in production.</h2>
+    <p>Blur Haus Media is launching with three founding clients in May 2026. Their work will live here as soon as the first month of content is delivered.</p>
+    <p>Want to be one of the first? Founding rates are locked for twelve months — three spots, then they fill.</p>
+    <a href="contact.html" class="btn" style="margin-top: 16px;">Book a Discovery Call</a>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Coming Soon.</h2>
+      <p class="sub">Placeholder grid — every tile becomes real client work as it ships.</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-tile wine">
+        <div class="placeholder-marker">01</div>
+        <span class="tile-tag">Hairstylist · Reel</span>
+        <h3>Color Transformation</h3>
+      </div>
+
+      <div class="portfolio-tile dark">
+        <div class="placeholder-marker">02</div>
+        <span class="tile-tag">Salon Owner · BTS</span>
+        <h3>Behind The Chair</h3>
+      </div>
+
+      <div class="portfolio-tile sand">
+        <div class="placeholder-marker">03</div>
+        <span class="tile-tag">Lash Artist · Editorial</span>
+        <h3>The Lash Story</h3>
+      </div>
+
+      <div class="portfolio-tile terracotta">
+        <div class="placeholder-marker">04</div>
+        <span class="tile-tag">Bridal MUA · Day-Of</span>
+        <h3>Wedding Day Coverage</h3>
+      </div>
+
+      <div class="portfolio-tile espresso">
+        <div class="placeholder-marker">05</div>
+        <span class="tile-tag">Esthetician · Service Launch</span>
+        <h3>The Glow Drop</h3>
+      </div>
+
+      <div class="portfolio-tile">
+        <div class="placeholder-marker" style="color: rgba(35, 31, 32, 0.12);">06</div>
+        <span class="tile-tag" style="color: var(--potters);">Stylist · Director's Cut</span>
+        <h3>Your Story Here</h3>
+      </div>
+
+    </div>
+
+    <div class="placeholder-note">
+      <p>Real client work replaces these placeholders as it ships. Check back, or follow on Instagram for new reels as they drop.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow">Be One Of The First</span>
+    <h2>Founding spots are open.</h2>
+    <p>Three founding clients lock in at these rates for twelve months. After that, rates rise. Book a discovery call to find your fit.</p>
+    <a href="contact.html" class="btn">Reserve Your Call</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Blur Haus Media — Scottsdale, AZ
+  </div>
+</footer>
+
+</body>
+</html>

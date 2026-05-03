@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Blur Haus Media</title>
+  <meta name="description" content="Meet Brooke. Founder of Blur Haus Media. The studio she wished existed when she was behind the chair.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader">
+    <span class="loader-text">Blur Haus</span>
+  </div>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span class="marquee-content">HAIRSTYLISTS · COLORISTS · ESTHETICIANS · LASH ARTISTS · BROW ARTISTS · MAKEUP ARTISTS · SPRAY TAN ARTISTS · NAIL ARTISTS · FOUNDING RATES OPEN · BLUR HAUS MEDIA · BOOK A DISCOVERY CALL</span>
+      <span class="marquee-content" aria-hidden="true">HAIRSTYLISTS · COLORISTS · ESTHETICIANS · LASH ARTISTS · BROW ARTISTS · MAKEUP ARTISTS · SPRAY TAN ARTISTS · NAIL ARTISTS · FOUNDING RATES OPEN · BLUR HAUS MEDIA · BOOK A DISCOVERY CALL</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">BLUR HAUS</a>
+    <ul class="nav-links">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Discovery Call</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="about-hero">
+      <div class="about-hero-text">
+        <span class="eyebrow about-eyebrow reveal">Meet the founder</span>
+        <h1 class="about-title reveal">Meet <span class="italic">Brooke.</span></h1>
+        <div class="about-body">
+          <p class="lead reveal">I trained in beauty before I ever picked up a camera.</p>
+          <p class="reveal">I worked behind the chair. I watched stylists I admired, talented artists doing premium work, putting out content that looked nothing like the work they were actually doing.</p>
+          <p class="reveal">It bothered me because the work itself was editorial. The hands knew what they were doing. The transformations were stunning. But the feed didn't show any of that.</p>
+          <p class="reveal">So I started Blur Haus Media. The studio I wish existed when I was behind the chair.</p>
+          <p class="reveal">What I do is film, edit, and deliver short-form video that actually looks like the work you're doing. Editorial. On-brand. Polished without being stiff. Real without being raw.</p>
+          <p class="reveal">Strategy and communication are baked into every package. We talk during shoots. You can reach me by DM or email.</p>
+        </div>
+      </div>
+      <div class="about-hero-photo reveal">
+        <img src="images/brooke-portrait.jpg" alt="Brooke Miller, founder of Blur Haus Media" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="photo-placeholder" style="display:none;">
+          <span>Photo coming soon</span>
+          <span style="opacity:0.6;">Save your portrait as<br>images/brooke-portrait.jpg</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-pull">
+      <div class="about-pull-inner">
+        <p class="reveal">"Editorial-quality video content production for beauty pros. We shoot, we edit, you post."</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <span class="eyebrow reveal">Ready when you are</span>
+      <p class="closing-line reveal" style="margin-top: 1rem;">Let's make something <span class="italic">good.</span></p>
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;" class="reveal">
+        <a href="menu.html" class="btn btn-ghost">See the menu</a>
+        <a href="contact.html" class="btn btn-primary">Book a discovery call</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">BLUR HAUS MEDIA</span>
+      <span class="footer-tag">Editorial video for beauty pros · Phoenix &amp; Scottsdale</span>
+      <span class="footer-meta">© 2026 Blur Haus Media</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

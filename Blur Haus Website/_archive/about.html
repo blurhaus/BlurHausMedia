@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Blur Haus Media</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* About-specific */
+  .about-hero {
+    padding: 120px 0 80px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  .about-hero .eyebrow { margin-bottom: 24px; }
+  .about-hero h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(64px, 10vw, 132px);
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--leather);
+    margin-bottom: 32px;
+  }
+  .about-hero .h1-italic {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    text-transform: none;
+    font-size: 0.95em;
+    color: var(--wine-berry);
+    letter-spacing: -0.01em;
+  }
+  .about-hero .subtitle {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 26px;
+    color: var(--leather);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.45;
+  }
+
+  .about-block {
+    padding: 80px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .about-block:last-of-type { border-bottom: none; }
+  .about-block .container-narrow { max-width: 760px; }
+  .about-block .label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--burnt-sienna);
+    margin-bottom: 16px;
+    display: block;
+  }
+  .about-block h2 {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: clamp(40px, 6vw, 56px);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--leather);
+    margin-bottom: 32px;
+  }
+  .about-block h2.impact {
+    font-family: 'Archivo Black', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+  }
+  .about-block p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    color: var(--espresso);
+    line-height: 1.75;
+    margin-bottom: 20px;
+    max-width: 680px;
+  }
+  .about-block p strong {
+    font-weight: 500;
+    color: var(--leather);
+  }
+
+  /* Photo placeholder */
+  .photo-placeholder {
+    width: 100%;
+    height: 480px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 720px;
+  }
+  .photo-placeholder span {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--potters);
+    font-weight: 500;
+  }
+
+  /* Values grid */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+  }
+  .value-block .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--burnt-sienna);
+    margin-bottom: 12px;
+    display: block;
+  }
+  .value-block h4 {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--leather);
+    margin-bottom: 12px;
+  }
+  .value-block p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--espresso);
+    line-height: 1.65;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">Blur Haus Media</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="menu-draft.html">Menu</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="about-hero">
+  <div class="container">
+    <span class="eyebrow">About</span>
+    <h1>The studio<br><span class="h1-italic">behind the lens.</span></h1>
+    <p class="subtitle">Blur Haus is a creative house where motion becomes content. Editorial video production for beauty pros — built by someone who actually worked behind the chair.</p>
+  </div>
+</section>
+
+<section class="about-block">
+  <div class="container-narrow">
+    <div class="photo-placeholder">
+      <span>Photo of Brooke · Coming after May 4 shoot</span>
+    </div>
+  </div>
+</section>
+
+<section class="about-block">
+  <div class="container-narrow">
+    <span class="label">The Origin</span>
+    <h2>I'm Brooke. I'm a cosmetologist.</h2>
+    <p>I trained in beauty before I ever picked up a camera. I worked behind the chair. I watched stylists I admired — talented, real artists doing premium work — put out content that looked nothing like the work they were actually doing. Phone footage. Bad lighting. No story.</p>
+    <p>It bothered me. Because the work itself was editorial. The hands knew what they were doing. The transformations were stunning. But the feed didn't show any of that.</p>
+    <p>So I started Blur Haus Media. <strong>The studio I wish existed when I was behind the chair.</strong></p>
+  </div>
+</section>
+
+<section class="about-block">
+  <div class="container-narrow">
+    <span class="label">What I Do</span>
+    <h2 class="impact">Production. Not management.</h2>
+    <p>I'm not a social media manager. I don't post for you. I don't write your captions. I don't run your ads or manage your DMs. There are people who do that, and they're great at it.</p>
+    <p>What I do is film, edit, and deliver short-form video that actually looks like the work you're doing. Editorial. On-brand. Polished without being stiff. Real without being raw.</p>
+    <p>You post. You build the relationships. I make sure the content is worth posting.</p>
+  </div>
+</section>
+
+<section class="about-block">
+  <div class="container-narrow">
+    <span class="label">What I Believe</span>
+    <h2>Three things I won't compromise on.</h2>
+    <div class="values-grid">
+
+      <div class="value-block">
+        <span class="num">01</span>
+        <h4>Quality over quantity.</h4>
+        <p>I'd rather deliver six reels you'll actually post than twenty you'll scroll past. Every shoot is intentional. Every edit is considered.</p>
+      </div>
+
+      <div class="value-block">
+        <span class="num">02</span>
+        <h4>Your brand, not mine.</h4>
+        <p>Every shoot is built around you — your voice, your service, your moment. Not a template. Not a trend. The content has to look like the work you actually do.</p>
+      </div>
+
+      <div class="value-block">
+        <span class="num">03</span>
+        <h4>Real relationships.</h4>
+        <p>Strategy and communication are baked into every package. We talk during shoots. You can reach me by DM or email. No formal calendar required.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="about-block">
+  <div class="container-narrow">
+    <span class="label">Behind The Studio</span>
+    <h2>The setup.</h2>
+    <p>I shoot on iPhone 17 Pro Max with a gimbal — the same setup most professional short-form creators are using right now. ProRes recording, cinema-grade autofocus, gimbal-stabilized motion. Phone footage cuts perfectly for Reels and TikTok and reads as real, not staged.</p>
+    <p>Based in <strong>Scottsdale, Arizona.</strong> Travel within the Phoenix metro area is included.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow">Let's Talk</span>
+    <h2>Book a discovery call.</h2>
+    <p>Free, 30 minutes, zero pressure. Tell me what you're trying to build, and I'll tell you exactly which service fits.</p>
+    <a href="contact.html" class="btn">Reserve Your Call</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Blur Haus Media — Scottsdale, AZ
+  </div>
+</footer>
+
+</body>
+</html>

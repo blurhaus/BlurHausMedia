@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blur Haus Media — Editorial Video for Beauty Pros</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Home-specific styles */
+  .home-hero {
+    padding: 140px 0 100px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .home-hero .container { max-width: 1200px; }
+  .home-hero .home-eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--burnt-sienna);
+    margin-bottom: 32px;
+    display: block;
+  }
+  .home-hero h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(64px, 12vw, 168px);
+    font-weight: 400;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--leather);
+    margin-bottom: 40px;
+  }
+  .home-hero h1 .italic {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    text-transform: none;
+    color: var(--wine-berry);
+    letter-spacing: -0.01em;
+    font-size: 0.95em;
+    display: inline-block;
+  }
+  .home-hero .lede {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    color: var(--espresso);
+    max-width: 580px;
+    line-height: 1.65;
+    margin-bottom: 48px;
+  }
+  .home-hero .hero-actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .home-hero .text-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--leather);
+    text-decoration: none;
+    border-bottom: 1px solid var(--leather);
+    padding-bottom: 4px;
+  }
+  .home-hero .text-link:hover { color: var(--burnt-sienna); border-color: var(--burnt-sienna); }
+
+  /* What we do block */
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .pillar {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    padding: 48px 36px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .pillar:hover {
+    border-color: var(--burnt-sienna);
+    transform: translateY(-4px);
+  }
+  .pillar .pillar-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--burnt-sienna);
+    margin-bottom: 16px;
+  }
+  .pillar h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--leather);
+    margin-bottom: 16px;
+  }
+  .pillar p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--espresso);
+    line-height: 1.65;
+    margin-bottom: 24px;
+    flex: 1;
+  }
+  .pillar .pillar-cta {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--wine-berry);
+    margin-top: auto;
+  }
+  .pillar .pillar-cta::after { content: ' →'; transition: margin-left 0.3s; }
+  .pillar:hover .pillar-cta::after { margin-left: 6px; }
+
+  /* About teaser */
+  .about-teaser {
+    background: var(--cream);
+    padding: 120px 0;
+  }
+  .about-teaser .container { max-width: 880px; text-align: center; }
+  .about-teaser .quote {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: clamp(32px, 4.5vw, 48px);
+    line-height: 1.35;
+    color: var(--leather);
+    margin-bottom: 40px;
+  }
+  .about-teaser .quote .accent { color: var(--wine-berry); }
+  .about-teaser .signature {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--burnt-sienna);
+    margin-bottom: 32px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">Blur Haus Media</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu-draft.html">Menu</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="home-hero">
+  <div class="container">
+    <span class="home-eyebrow">Beauty · Editorial · Production</span>
+    <h1>Editorial<br>video for<br><span class="italic">beauty pros.</span></h1>
+    <p class="lede">A creative house where motion becomes content. We film, edit, and deliver short-form video built around the work you actually do — so your feed reflects your real talent, not a phone screenshot.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn">Book a Discovery Call</a>
+      <a href="menu-draft.html" class="text-link">View the Menu</a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="founding-note" style="margin-top: 64px;">
+    <span class="eyebrow">Founding Rates</span>
+    <p>Three founding spots are open. Locked rates for twelve months — once they're filled, rates rise.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>What we do.</h2>
+      <p class="sub">Three ways to work together. Pick the one that fits — start with a discovery call and I'll match you to the right service.</p>
+    </div>
+
+    <div class="pillars-grid">
+
+      <a href="menu-draft.html#memberships" class="pillar">
+        <div class="pillar-num">01 · Ongoing</div>
+        <h3>Memberships</h3>
+        <p>Monthly content production for stylists and salon owners building a real feed. Three tiers, three-month minimum, content tailored to your brand. The Studio, The Loft, The Full Haus VIP.</p>
+        <span class="pillar-cta">Explore Memberships</span>
+      </a>
+
+      <a href="menu-draft.html#single-session" class="pillar">
+        <div class="pillar-num">02 · One-Off</div>
+        <h3>Single Session</h3>
+        <p>A standalone shoot day for a service launch, hero appointment, or creative test. No commitment. Tailored to whatever you want filmed. The Glimpse.</p>
+        <span class="pillar-cta">Explore The Glimpse</span>
+      </a>
+
+      <a href="menu-draft.html#productions" class="pillar">
+        <div class="pillar-num">03 · On-Location</div>
+        <h3>Productions</h3>
+        <p>Coverage for wedding days, multi-vendor events, salon launches, and multi-stylist photoshoots. Half-day or full-day. The Vignette and The Feature.</p>
+        <span class="pillar-cta">Explore Productions</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="about-teaser">
+  <div class="container">
+    <div class="signature">A Note From The Studio</div>
+    <p class="quote">"I'm a cosmetologist who got tired of watching brilliant beauty pros put out content that didn't match their craft. <span class="accent">Blur Haus is the studio I wish existed when I was behind the chair.</span>"</p>
+    <a href="about.html" class="text-link" style="font-family: 'Space Grotesk', sans-serif; font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; font-weight: 500; color: var(--leather); text-decoration: none; border-bottom: 1px solid var(--leather); padding-bottom: 4px;">Read More About Brooke</a>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow">Let's Talk</span>
+    <h2>Book a discovery call.</h2>
+    <p>Free, 30 minutes, zero pressure. Tell me what you're trying to build, and I'll tell you exactly which service fits.</p>
+    <a href="contact.html" class="btn">Reserve Your Call</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Blur Haus Media — Scottsdale, AZ
+  </div>
+</footer>
+
+</body>
+</html>
